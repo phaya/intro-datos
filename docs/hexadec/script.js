@@ -8,7 +8,7 @@ hexInput.addEventListener("input", () => {
     if (/^[0-9a-fA-F]*$/.test(hexValue)) { // Verifica que sea válido
         decInput.value = hexValue ? parseInt(hexValue, 16) : "";
     } else {
-        decInput.value = "Invalid Hex";
+        decInput.value = "Número hexadecimal inválido";
     }
 });
 
@@ -18,6 +18,6 @@ decInput.addEventListener("input", () => {
     if (/^\d*$/.test(decValue)) { // Verifica que sea válido
         hexInput.value = decValue ? parseInt(decValue, 10).toString(16).toUpperCase() : "";
     } else {
-        hexInput.value = "Invalid Dec";
+        hexInput.value = "Número decimal inválid";
     }
 });
